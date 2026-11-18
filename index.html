@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dewmi Harischandra | Web Developer</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-logo">DH</span>
+        <span class="brand-text">Dewmi</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="primary-navigation" data-state="closed">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Web Developer</p>
+        <h1 class="hero-title">Hi, I’m <span class="accent">Dewmi Harischandra</span></h1>
+        <p class="hero-subtitle">I build fast, responsive, accessible web experiences with clean code and thoughtful design.</p>
+
+        <div class="cta-row">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-eye"></i> View Projects</a>
+          <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <img src="WhatsApp Image 2025-08-23 at 22.03.43_1f2ce392.jpg" alt="Illustration / profile banner" />
+      </div>
+    </div>
+    <button class="scroll-down" aria-label="Scroll to About" id="scrollDown">
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section reveal-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="split">
+        <div class="split-col">
+          <p>
+            I’m an enthusiastic Web Developer and ICT undergraduate at Rajarata University of Sri Lanka. I love turning ideas
+            into interactive products, focusing on performance, accessibility, and delightful UX.
+          </p>
+          <p>
+            <strong>Background:</strong> Started with HTML & CSS, then dove into JavaScript and modern tooling. I enjoy building component-based UIs and
+            learning best practices for scalable front-end architectures.
+          </p>
+          <p>
+            <strong>Goals:</strong> Gain real-world experience through projects and internships, and grow into a capable full-stack developer
+            who ships reliable, user-centric applications.
+          </p>
+        </div>
+        <div class="split-col center">
+          <img class="avatar" src="WhatsApp Image 2025-08-23 at 22.03.44_a716dfb7.jpg" alt="Portrait of Dewmi Harischandra" />
+          <div class="chips">
+            <span class="chip">Responsive Design</span>
+            <span class="chip">UI/UX</span>
+            <span class="chip">APIs</span>
+            <span class="chip">Open Source</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section alt reveal-section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="grid cards" id="projectGrid">
+        <!-- Card 1 -->
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="Screenshot 2025-08-23 225736.png" alt="Screenshot of portfolio website" />
+          </div>
+          <div class="card-body">
+            <h3>Personal Portfolio</h3>
+            <p>A responsive portfolio site showcasing projects, skills, and contact information.</p>
+            <ul class="tech">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="card-actions">
+              <a href="https://itt2023072-collab.github.io/Portfolio/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+              <a href="https://github.com/itt2023072-collab/Portfolio.git" class="btn btn-sm btn-ghost" target="_blank">View Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="Screenshot 2025-08-23 224845.png" alt="Screenshot of online book store" />
+          </div>
+          <div class="card-body">
+            <h3>Online Book Store</h3>
+            <p>Product listings, cart, and checkout UI with local storage for persistence.</p>
+            <ul class="tech">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>LocalStorage</li>
+            </ul>
+            <div class="card-actions">
+              <a href="https://itt2023072-collab.github.io/Book/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+              <a href="https://github.com/itt2023072-collab/Book.git" class="btn btn-sm btn-ghost" target="_blank">View Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="Screenshot 2025-08-23 225349.png" alt="Screenshot of weather app" />
+          </div>
+          <div class="card-body">
+            <h3>Weather App</h3>
+            <p>Fetches and displays live weather data for Sri Lankan cities using an external API.</p>
+            <ul class="tech">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>API</li>
+            </ul>
+            <div class="card-actions">
+              <a href="https://itt2023072-collab.github.io/Weather/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+              <a href="https://github.com/itt2023072-collab/Weather.git" class="btn btn-sm btn-ghost" target="_blank">View Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section reveal-section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="grid skills-grid">
+        <div class="skill">
+          <span>HTML5</span>
+          <div class="bar"><span style="width: 90%"></span></div>
+        </div>
+        <div class="skill">
+          <span>CSS3</span>
+          <div class="bar"><span style="width: 85%"></span></div>
+        </div>
+        <div class="skill">
+          <span>JavaScript (ES6+)</span>
+          <div class="bar"><span style="width: 80%"></span></div>
+        </div>
+        <div class="skill">
+          <span>React (Beginner)</span>
+          <div class="bar"><span style="width: 60%"></span></div>
+        </div>
+        <div class="skill">
+          <span>Git & GitHub</span>
+          <div class="bar"><span style="width: 75%"></span></div>
+        </div>
+        <div class="skill">
+          <span>UI/UX Basics</span>
+          <div class="bar"><span style="width: 70%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section alt reveal-section">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="split">
+        <div class="split-col">
+          <div class="contact-list">
+            <a class="contact-item" href="itt2023072@tec.rjt.ac.lk">
+              <i class="fa-solid fa-envelope"></i> itt2023072@tec.rjt.ac.lk
+            </a>
+            <a class="contact-item" href="https://github.com/" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github"></i> https://github.com/
+            </a>
+            <a class="contact-item" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-linkedin"></i> https://www.linkedin.com/
+            </a>
+          </div>
+        </div>
+
+        <div class="split-col">
+          <form id="contactForm" class="form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Dewmi Harischandra. All rights reserved.</p>
+      <a href="#top" class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
